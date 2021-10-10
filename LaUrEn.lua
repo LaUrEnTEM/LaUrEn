@@ -4257,7 +4257,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '˛ ˛Lauren tِٰaِmٌٓe 🦇.',url="https://t.me/LLNNTT"}},
 {{text = '˛ KٰaRٍiUsَ 🦅',url="t.me/Y_3_3"},{text = '𝗧𝗪𝗦 𝗟𝗔𝗨𝗥𝗘𝗡 ⁦ 🕷',url="https://t.me/T_LN_bot"}},{{text= '• Support Source • .',url="https://t.me/LLNNTT"}}
-},
+}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LLNNTT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
