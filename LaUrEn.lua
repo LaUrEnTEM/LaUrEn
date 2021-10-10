@@ -8701,7 +8701,7 @@ Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙تم الغاء امر الزخرفه',
 DevAli:del(LaUrEn..'Zrf:Ali'..msg.chat_id_..msg.sender_user_id_)
 return false  
 end 
-UrlZrf = https.request('https://apiali.ml/zrf.php?ali='..URL.escape(text)) 
+UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(text)) 
 Zrf = JSON.decode(UrlZrf) 
 t = "♪︙قائمة الزخرفه ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"
 i = 0
@@ -8722,7 +8722,7 @@ end
 if not DevAli:get(LaUrEn..'Ali:Zrf:Ali'..msg.chat_id_) then
 if text and text:match("^زخرفه (.*)$") and ChCheck(msg) or text and text:match("^زخرف (.*)$") and ChCheck(msg) then 
 local TextZrf = text:match("^زخرفه (.*)$") or text:match("^زخرف (.*)$") 
-UrlZrf = https.request('https://apiali.ml/zrf.php?ali='..URL.escape(TextZrf)) 
+UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZrf)) 
 Zrf = JSON.decode(UrlZrf) 
 t = "♪︙قائمة الزخرفه ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"
 i = 0
@@ -8747,9 +8747,9 @@ end
 if not DevAli:get(LaUrEn..'Ali:Brg:Ali'..msg.chat_id_) then
 if text and text:match("^برج (.*)$") and ChCheck(msg) or text and text:match("^برجي (.*)$") and ChCheck(msg) then 
 local TextBrg = text:match("^برج (.*)$") or text:match("^برجي (.*)$") 
-UrlBrg = https.request('https://apiali.ml/brg.php?brg='..URL.escape(TextBrg)) 
+UrlBrg = https.request('https://apiabs.ml/brg.php?brg='..URL.escape(TextBrg)) 
 Brg = JSON.decode(UrlBrg) 
-t = Brg.ok.ali  
+t = Brg.ok.abs  
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
