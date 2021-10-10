@@ -8762,7 +8762,7 @@ Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source LaUrEn     --
-if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
+if text and (text == "تفعيل اوامر النسب" or text == "تفعيل " or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
 local LaUrEnTEAM = '♪︙اهلا عزيزي ↫ '..AliRank(msg)..' \n♪︙تم تفعيل اوامر النسب'
 alimoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
 DevAli:del(LaUrEn..'Ali:Nsba:Ali'..msg.chat_id_) 
@@ -8873,7 +8873,7 @@ if text and text:match("^احسب (.*)$") and ChCheck(msg) or text and text:matc
 local TextAge = text:match("^احسب (.*)$") or text:match("^عمري (.*)$") 
 UrlAge = https.request('https://apiabs.ml/age.php?age='..URL.escape(TextAge)) 
 Age = JSON.decode(UrlAge) 
-t = Age.ok.ali
+t = Age.ok.abs
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
