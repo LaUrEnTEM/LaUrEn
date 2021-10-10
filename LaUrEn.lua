@@ -8891,7 +8891,7 @@ end
 if not DevAli:get(LaUrEn..'Ali:Mean:Ali'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apiabs.ml/Mean.php?abs='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?Abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
 t = Mean.ok.abs
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
