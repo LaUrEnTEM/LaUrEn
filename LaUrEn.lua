@@ -4414,6 +4414,14 @@ keyboard.inline_keyboard = {{{text = ''..result.first_name_..' ',url="t.me/"..re
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
 end
+if text == "مطور السورس" or text == "مطور السورس" or text == "المبرمج" then 
+Text = "• *The • 𝗟𝗔𝗨𝗥𝗘𝗡 𝗧𝗘𝗔𝗠 🦅 and programmer of this source is* : [KٰaRٍiUsَ ◞](https://t.me/Y_3_3)."
+keyboard = {} 
+keyboard.inline_keyboard = {{{text='- KٰaRٍiUsَ ◞ •',url="t.me/Y_3_3"}}}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/RFRFF&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end
 --     Source LaUrEn     --
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') then 
 if not DevAli:get(LaUrEn..'Ali:Lock:Stupid'..msg.chat_id_) then
@@ -8863,7 +8871,7 @@ end
 if not DevAli:get(LaUrEn..'Ali:Age:Ali'..msg.chat_id_) then
 if text and text:match("^احسب (.*)$") and ChCheck(msg) or text and text:match("^عمري (.*)$") and ChCheck(msg) then 
 local TextAge = text:match("^احسب (.*)$") or text:match("^عمري (.*)$") 
-UrlAge = https.request('https://apiali.ml/age.php?age='..URL.escape(TextAge)) 
+UrlAge = https.request('https://apiabs.ml/age.php?age='..URL.escape(TextAge)) 
 Age = JSON.decode(UrlAge) 
 t = Age.ok.ali
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
@@ -8883,9 +8891,9 @@ end
 if not DevAli:get(LaUrEn..'Ali:Mean:Ali'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apiali.ml/Mean.php?Ali='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
-t = Mean.ok.ali
+t = Mean.ok.abs
 Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
