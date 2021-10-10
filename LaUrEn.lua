@@ -4248,18 +4248,20 @@ DevAli:set(LaUrEn..'Ali:viewget'..msg.sender_user_id_,true)
 Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
 --     Source LaUrEn     --
-if text == "السورس" or text == "سورس" then
+if text == "السورس" or text == "سورس" then 
 Text = [[
 Welcome To Source
-[˛ 𝗟𝗔𝗨𝗥𝗘𝗡 𝗧𝗘𝗔𝗠 🦇.](https://t.me/LLNNTT)
+♪︙[LaUrEn TEAM](https://t.me/LLNNTT)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ ˛Lauren tِٰaِmٌٓe 🦇.',url="https://t.me/LLNNTT"}},
-{{text = '˛ KٰaRٍiUsَ 🦅',url="t.me/Y_3_3"},{text = '𝗧𝗪𝗦 𝗟𝗔𝗨𝗥𝗘𝗡 ⁦ 🕷',url="https://t.me/T_LN_bot"}},{{text= '• Support Source • .',url="https://t.me/LLNNTT"}}
-},
+{{text = '♪ Source Channel',url="https://t.me/LLNNTT"}},
+{{text = '♪ Exp Source',url="t.me/EXPLL"}},
+{{text = '♪ Developer',url="t.me/I1k10"}},
+{{text = '♪ Tws LaUrEn',url="https://t.me/T_LN_bot"}},
+}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LLNNTT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source LaUrEn     --
