@@ -9088,22 +9088,22 @@ end
 end
 --     Source LaUrEn     --
 if text == "تفعيل الابراج" and Manager(msg) and ChCheck(msg) then
-local LaUrEnTEAM = ' ⚘╽اهلا عزيزي -›  '..AliRank(msg)..' \n ⚘╽تم تفعيل الابراج بنجاح'
-alimoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
-DevAli:del(LaUrEn..'Ali:Brg:Ali'..msg.chat_id_) 
+local LaUrEnTEAM = '⚘ ¦ اهلا عزيزي -› '..AbsRank(msg)..' \n⚘ ¦ تم تفعيل الابراج بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:del(LaUrEn..'Abs:Brg:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل الابراج" and Manager(msg) and ChCheck(msg) then
-local LaUrEnTEAM = ' ⚘╽اهلا عزيزي -›  '..AliRank(msg)..' \n ⚘╽تم تعطيل الابراج بنجاح'
-alimoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
-DevAli:set(LaUrEn..'Ali:Brg:Ali'..msg.chat_id_,true)  
+local LaUrEnTEAM = '⚘ ¦ اهلا عزيزي -› '..AbsRank(msg)..' \n⚘ ¦ تم تعطيل الابراج بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:set(LaUrEn..'Abs:Brg:Abs'..msg.chat_id_,true)  
 end
-if not DevAli:get(LaUrEn..'Ali:Brg:Ali'..msg.chat_id_) then
+if not DevAbs:get(LaUrEn..'Abs:Brg:Abs'..msg.chat_id_) then
 if text and text:match("^برج (.*)$") and ChCheck(msg) or text and text:match("^برجي (.*)$") and ChCheck(msg) then 
 local TextBrg = text:match("^برج (.*)$") or text:match("^برجي (.*)$") 
-UrlBrg = https.request('https://apiAli.ml/brg.php?brg='..URL.escape(TextBrg)) 
+UrlBrg = https.request('https://apiabs.ml/brg.php?brg='..URL.escape(TextBrg)) 
 Brg = JSON.decode(UrlBrg) 
-t = Brg.ok.Ali  
-Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
+t = Brg.ok.abs  
+Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source LaUrEn     --
@@ -9204,22 +9204,22 @@ return false
 end
 --     Source LaUrEn     --
 if text == "تفعيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local LaUrEnTEAM = ' ⚘╽اهلا عزيزي -›  '..AliRank(msg)..' \n ⚘╽تم تفعيل حساب العمر'
-alimoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
-DevAli:del(LaUrEn..'Ali:Age:Ali'..msg.chat_id_) 
+local LaUrEnTEAM = '⚘ ¦ اهلا عزيزي -› '..AbsRank(msg)..' \n⚘ ¦ تم تفعيل حساب العمر'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:del(LaUrEn..'Abs:Age:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local LaUrEnTEAM = ' ⚘╽اهلا عزيزي -›  '..AliRank(msg)..' \n ⚘╽تم تعطيل حساب العمر'
-alimoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
-DevAli:set(LaUrEn..'Ali:Age:Ali'..msg.chat_id_,true)  
+local LaUrEnTEAM = '⚘ ¦ اهلا عزيزي -› '..AbsRank(msg)..' \n⚘ ¦ تم تعطيل حساب العمر'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:set(LaUrEn..'Abs:Age:Abs'..msg.chat_id_,true)  
 end
-if not DevAli:get(LaUrEn..'Ali:Age:Ali'..msg.chat_id_) then
+if not DevAbs:get(LaUrEn..'Abs:Age:Abs'..msg.chat_id_) then
 if text and text:match("^احسب (.*)$") and ChCheck(msg) or text and text:match("^عمري (.*)$") and ChCheck(msg) then 
 local TextAge = text:match("^احسب (.*)$") or text:match("^عمري (.*)$") 
-UrlAge = https.request('https://apiAli.ml/age.php?age='..URL.escape(TextAge)) 
+UrlAge = https.request('https://apiabs.ml/age.php?age='..URL.escape(TextAge)) 
 Age = JSON.decode(UrlAge) 
-t = Age.ok.Ali
-Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
+t = Age.ok.abs
+Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source LaUrEn     --
@@ -9233,18 +9233,30 @@ local LaUrEnTEAM = ' ⚘╽اهلا عزيزي -›  '..AliRank(msg)..' \n ⚘�
 alimoned(msg.chat_id_, msg.sender_user_id_, msg.id_, LaUrEnTEAM, 14, string.len(msg.sender_user_id_))
 DevAli:set(LaUrEn..'Ali:Mean:Ali'..msg.chat_id_,true)  
 end
-if not DevAli:get(LaUrEn..'Ali:Mean:Ali'..msg.chat_id_) then
+if not DevAbs:get(LaUrEn..'Abs:Mean:Abs'..msg.chat_id_) then
 if text and text:match("^معنى الاسم (.*)$") and ChCheck(msg) or text and text:match("^معنى اسم (.*)$") and ChCheck(msg) then 
 local TextMean = text:match("^معنى الاسم (.*)$") or text:match("^معنى اسم (.*)$") 
-UrlMean = https.request('https://apiAli.ml/Mean.php?Ali='..URL.escape(TextMean)) 
+UrlMean = https.request('https://apiabs.ml/Mean.php?Abs='..URL.escape(TextMean)) 
 Mean = JSON.decode(UrlMean) 
-t = Mean.ok.Ali
-Dev_Ali(msg.chat_id_, msg.id_, 1, t, 1, 'html')
+t = Mean.ok.abs
+Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source LaUrEn     --
+if text == "تفعيل غنيلي" and Manager(msg) and ChCheck(msg) then
+local SNAPTEAM = '⚘ ¦ اهلا عزيزي -› '..AbsRank(msg)..' \n⚘ ¦ تم تفعيل غنيلي بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:del(LaUrEn..'Abs:Audios:Abs'..msg.chat_id_) 
+end
+--     Source LaUrEn     --
+if text == "تعطيل غنيلي" and Manager(msg) and ChCheck(msg) then
+local SNAPTEAM = '⚘ ¦ اهلا عزيزي -› '..AbsRank(msg)..' \n⚘ ¦ تم تعطيل غنيلي بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:set(LaUrEn..'Abs:Audios:Abs'..msg.chat_id_,true)  
+end
+--     Source LaUrEn     --
 if text == "غنيلي" and ChCheck(msg) then
-data,res = https.request('https://apiAli.ml/Audios.php')
+data,res = https.request('https://apiabs.ml/Audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
