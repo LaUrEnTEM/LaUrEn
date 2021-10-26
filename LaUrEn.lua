@@ -1469,41 +1469,41 @@ end
 Dev_Ali(msg.chat_id_, msg.id_, 1, "⚘╽تم حذف الاوامر المضافه في المجموعه", 1, 'html')
 end
 if text == "ترتيب الاوامر" and Constructor(msg) then
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ا")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"م")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اد")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مد")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"من")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اس")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مط")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تك")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ر")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رر")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"،،")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رد")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"سح")
-DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
-DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رس")
-    send(msg.chat_id_, msg.id_,"⚘╽تم ترتيب الاوامر بالشكل التالي ~\n- ايدي - ا .\n- رفع مميز - م .\n-رفع ادمن - اد .\n- رفع مدير - مد . \n- رفع منشى - من . \n- رفع منشئ الاساسي - اس  .\n- رفع مطور - مط .\n-رفع مطور ثانوي - ثانوي .\n- تنزيل الكل - تك .\n- تعطيل الايدي بالصوره - تعط .\n- تفعيل الايدي بالصوره - تفع .\n- الرابط - ر .\n- ردود المدير - رر .\n- مسح المكتومين - ،، .\n- اضف رد - رد .\n- مسح سحكاتي - سح .\n- مسح رسائلي - رس .")  
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ا")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"م")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اد")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مد")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"من")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مط")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تك")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ر")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رر")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"،،")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"سح")
+DevAli:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
+DevAli:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رس")
+    send(msg.chat_id_, msg.id_,"♪︙تم ترتيب الاوامر بالشكل التالي ~\n- ايدي - ا .\n- رفع مميز - م .\n-رفع ادمن - اد .\n- رفع مدير - مد . \n- رفع منشى - من . \n- رفع منشئ الاساسي - اس  .\n- رفع مطور - مط .\n-رفع مطور ثانوي - ثانوي .\n- تنزيل الكل - تك .\n- تعطيل الايدي بالصوره - تعط .\n- تفعيل الايدي بالصوره - تفع .\n- الرابط - ر .\n- ردود المدير - رر .\n- مسح المكتومين - ،، .\n- اضف رد - رد .\n- مسح سحكاتي - سح .\n- مسح رسائلي - رس .")  
     end
      if text == "الساعه" then
 local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
@@ -1907,7 +1907,7 @@ keyboard.inline_keyboard = {
 {{text="🔵 Color Game 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 Rocket Game 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
 {{text="لعبة النينجا",url='https://t.me/gamee?game=GravityNinja21'},{text="لعبة الكرتي",url='https://t.me/gamee?game=KarateKid2'}},
-{{text = '♪ LaUrEn Team .', url="t.me/zvzzzz"}},
+{{text = ' ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹  .', url="t.me/zvzzzz"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3414,7 +3414,7 @@ if text ==  'حذف نقاطي' and ChCheck(msg) or text ==  'مسح نقاطي'
 --     Source LaUrEn     --
 if text == 'سمايلات' and ChCheck(msg) or text == 'السمايلات' and ChCheck(msg) then
 if not DevAli:get(LaUrEn..'Ali:Lock:Games'..msg.chat_id_) then
-DevAli2 = {'🍏','🍎','🍐','🍊','🍋','🍌','🍉','🍇','🍓','🍈','🍒','🍑','🍍','🥥','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🍠','🥐','🍞','🥖','🥨','🧀','🥚','🍳','🥞','🥓','🥩','🍗','🍖','🌭','🍔','🍟','🍕','🥪','🥙','🍼','☕️','🍵','🥤','??','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🏆','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🛎','📤','🎗','🏵','🎖','🏆','🥌','🛷','🚕','🚗','🚙','🚌','🚎','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔️','🛡','🔮','🌡','💣','⏱','🛢','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
+DevAli2 = {'🍏','🍎','🍐','🍊','🍋','🍌','🍉','🍇','🍓','🍈','🍒','🍑','🍍','🥥','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🍠','🥐','🍞','🥖','🥨','🧀','🥚','🍳','🥞','🥓','🥩','🍗','🍖','🌭','🍔','🍟','🍕','🥪','🥙','🍼','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🏆','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🛎','📤','🎗','🏵','🎖','🏆','🥌','🛷','🚕','🚗','🚙','🚌','🚎','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔️','🛡','🔮','🌡','💣','⏱','🛢','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
 name = DevAli2[math.random(#DevAli2)]
 DevAli:set(LaUrEn..'Ali:GameNum'..msg.chat_id_,name)
 DevAli:del(LaUrEn..'Ali:Games:Ids'..msg.chat_id_)
@@ -4394,9 +4394,9 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source LaUrEn     --
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Ali(msg.chat_id_, msg.id_, 1, '⚘╽@HMSEBOT', 1, 'md') end
-if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⚘╽اضغط للحصول على الرابط',nil,inline) return false end
-if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⚘╽اضغط للحصول على البوت',nil,inline) return false end
+if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Ali(msg.chat_id_, msg.id_, 1, '⚘╽@Y22fbot', 1, 'md') end
+if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://my.telegram.org/auth?to=delete"}}} SendInline(msg.chat_id_,'⚘╽اضغط للحصول على الرابط',nil,inline) return false end
+if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://my.telegram.org/auth?to=delete"}}} SendInline(msg.chat_id_,'⚘╽اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAli:get(LaUrEn..'Ali:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Ali(msg.chat_id_, msg.id_, 1, "⚘╽عدد جهاتك المضافه -›  *❨ "..add.." ❩* ", 1, 'md') end
 if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = DevAli:get(LaUrEn..'Ali:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_Ali(msg.chat_id_, msg.id_, 1, "⚘╽عدد تعديلاتك -›  *❨ "..edit_msg.." ❩* ", 1, 'md') end
 if text == "ايديي" and ChCheck(msg) then Dev_Ali(msg.chat_id_, msg.id_, 1,'⚘╽ايديك -›  ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
@@ -9000,10 +9000,10 @@ data,res = https.request('https://apiabs.ml/Audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
-local Text ='⚘╽تم اختيار المقطع الصوتي لك'
+local Text ='• تع ؏ٛـمَݛيہِٰ غنيتلك 🦇'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♪ LaUrEn TeAM .',url="t.me/iinzzz"}},
+{{text = ' ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹  .',url="t.me/iinzzz"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..msg.chat_id_..'&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
