@@ -1468,47 +1468,43 @@ DevAli:del(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_)
 end
 Dev_Ali(msg.chat_id_, msg.id_, 1, "⚘╽تم حذف الاوامر المضافه في المجموعه", 1, 'html')
 end
-if text == "ترتيب الاوامر" and Constructor(msg) and ChCheck(msg) then
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ا")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"م")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اد")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مد")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"من")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اس")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مط")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تك")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ر")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رر")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"،،")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رد")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"سح")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رس")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":غ","غنيلي")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"غ")
-Dev_Ali:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":#","مسح قائمه العام")
-Dev_Ali:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"#")
-send(msg.chat_id_, msg.id_,"⚘ ¦تم ترتيب الاوامر بالشكل التالي ~\n⚘╽ايدي - ا .\n⚘╽رفع مميز - م .\n⚘ ¦رفع ادمن - اد .\n⚘╽رفع مدير - مد . \n⚘╽رفع منشى - من . \n⚘╽رفع منشئ الاساسي - اس  .\n⚘╽رفع مطور - مط .\n⚘ ¦رفع مطور ثانوي - ثانوي .\n⚘╽تنزيل الكل - تك .\n⚘╽تعطيل الايدي بالصوره - تعط .\n⚘╽تفعيل الايدي بالصوره - تفع .\n⚘╽الرابط - ر .\n⚘╽ردود المدير - رر .\n⚘╽مسح المكتومين - ،، .\n⚘╽اضف رد - رد .\n⚘╽مسح سحكاتي - سح .\n⚘╽مسح رسائلي - رس .\n⚘╽غنيلي - غ .\n⚘ ¦مسح قائمه العام - #")  
-end
+if text == "ترتيب الاوامر" and Constructor(msg) then
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ا")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"م")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اد")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مد")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"من")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"مط")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تك")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"ر")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رر")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"،،")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"سح")
+DevAbs:set(LaUrEn.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
+DevAbs:sadd(LaUrEn.."List:Cmd:Group:New"..msg.chat_id_,"رس")
+    send(msg.chat_id_, msg.id_,"⚘╽تم ترتيب الاوامر بالشكل التالي ~\n- ايدي - ا .\n- رفع مميز - م .\n-رفع ادمن - اد .\n- رفع مدير - مد . \n- رفع منشى - من . \n- رفع منشئ الاساسي - اس  .\n- رفع مطور - مط .\n-رفع مطور ثانوي - ثانوي .\n- تنزيل الكل - تك .\n- تعطيل الايدي بالصوره - تعط .\n- تفعيل الايدي بالصوره - تفع .\n- الرابط - ر .\n- ردود المدير - رر .\n- مسح المكتومين - ،، .\n- اضف رد - رد .\n- مسح سحكاتي - سح .\n- مسح رسائلي - رس .")  
+    end
      if text == "الساعه" then
 local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
 send(msg.chat_id_, msg.id_,ramsesj20)
@@ -5446,10 +5442,10 @@ if text ==('رفع رتبه') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘╽الحساب محذوف", 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⚘╽قم باستعمال الازرار لرفع العضو -› ↡\n⚘╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⚘ ¦ قم باستعمال الازرار لرفع العضو -› ↡\n⚘ ¦ العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 if Sudo(msg) then
 inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = '˛ 𝙨𝙣𝙖𝙥 𝙩𝙚𝙖𝙢 🥡',url="t.me/iinzzz"}}}
 elseif SecondSudo(msg) then
@@ -5479,10 +5475,10 @@ if text ==('تنزيل رتبه') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘╽الحساب محذوف", 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⚘╽قم باستعمال الازرار لتنزيل العضو -› ↡\n⚘╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⚘ ¦ قم باستعمال الازرار لتنزيل العضو -› ↡\n⚘ ¦ العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 if Sudo(msg) then
 inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = '˛ 𝙨𝙣𝙖𝙥 𝙩𝙚𝙖𝙢 🥡',url="t.me/iinzzz"}}}
 elseif SecondSudo(msg) then
@@ -5512,10 +5508,10 @@ if text ==('تحكم') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘╽الحساب محذوف", 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⚘╽قم باستعمال الازرار للتحكم العضو -› ↡\n⚘╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⚘ ¦ قم باستعمال الازرار للتحكم العضو -› ↡\n⚘ ¦ العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 inline = {
 {{text="رفع رتبه",callback_data=msg.sender_user_id_..":SetRtba:"..result.sender_user_id_},{text="تنزيل رتبه",callback_data=msg.sender_user_id_..":RemRtba:"..result.sender_user_id_}},
 {{text="كتم",callback_data=msg.sender_user_id_..":Mute:"..result.sender_user_id_},{text="الغاء كتم",callback_data=msg.sender_user_id_..":UnMute:"..result.sender_user_id_}},
@@ -6530,7 +6526,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘╽حساب المنشئ محذوف", 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ حساب المنشئ محذوف", 1, "md")
 return false  
 end
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = dp.id_,offset_ = 0,limit_ = 1},function(extra,abbas,success) 
@@ -6538,9 +6534,9 @@ if abbas.photos_[0] then
 keyboard = {} 
 keyboard.inline_keyboard = {{{text=dp.first_name_,url=("t.me/"..dp.username_ or "t.me/iinzzz")}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..abbas.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape("⚘╽مالك المجموعه -› ↡").."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..abbas.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape("⚘ ¦ مالك المجموعه -› ↡").."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-SendText(msg.chat_id_,"⚘╽مالك المجموعه -› ["..dp.first_name_.."](tg://user?id="..dp.id_..")",msg.id_/2097152/0.5,'md')
+SendText(msg.chat_id_,"⚘ ¦ مالك المجموعه -› ["..dp.first_name_.."](tg://user?id="..dp.id_..")",msg.id_/2097152/0.5,'md')
 end
 end,nil)  
 end,nil)   
