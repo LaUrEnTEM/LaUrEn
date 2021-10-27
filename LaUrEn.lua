@@ -3369,14 +3369,15 @@ return false
 end
 --     Source LaUrEn     --
 if text == "الرابط" then
-if not DevAli:get(LaUrEn.."Ali:Lock:GpLinksinline"..msg.chat_id_) then 
+if not DevAbs:get(LaUrEn.."Abs:Lock:GpLinksinline"..msg.chat_id_) then 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevAli:get(LaUrEn.."Private:Group:Link"..msg.chat_id_) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevAbs:get(SNAP.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Text = '⚘╽𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
-local inline = {{{text = ta.title_, url=linkgpp.result}},
-} 
-SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5) 
+local Text = '⚘ ¦ 𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n━─━─━─ ₪ ─━─━─━\n['..ta.title_..']('..linkgpp.result..')'
+keyboard = {}  
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}}}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else 
 end 
 end,nil) 
