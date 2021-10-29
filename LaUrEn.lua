@@ -3382,7 +3382,7 @@ else
 end 
 end,nil) 
 end
-endو
+end
 --     Source LaUrEn     --
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
@@ -9011,15 +9011,15 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..m
 end
 end
 end
-if text and (text == "متحركه" or text == "-› متحركه ᥀") and not DevAli:get(LaUrEn..'Ali:gif:Ali'..msg.chat_id_) and SourceCh(msg) then
-Ali = math.random(2,1075); 
+if text and (text == "متحركه" or text == "-› متحركه ᥀") and not DevAbs:get(LaUrEn..'Abs:gif:Abs'..msg.chat_id_) and SourceCh(msg) then
+Abs = math.random(2,1075); 
 local Text ='*᥀︙تم اختيار المتحركه لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '᥀ SNAP Team .',url="t.me/iinzzz"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/iinzzz/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/KKKKB/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) st("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/iinzzz/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source LaUrEn     --
 if Admin(msg) then
