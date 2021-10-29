@@ -9011,8 +9011,8 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..m
 end
 end
 end
-if text and (text == "متحركه" or text == "-› متحركه ᥀") and not DevAbs:get(LaUrEn..'Abs:gif:Abs'..msg.chat_id_) and SourceCh(msg) then
-Abs = math.random(2,1075); 
+if text and (text == "متحركه" or text == "-› متحركه ᥀") and not DevAli:get(LaUrEn..'Ali:gif:Ali'..msg.chat_id_) and SourceCh(msg) then
+Ali = math.random(2,1075); 
 local Text ='*᥀︙تم اختيار المتحركه لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
