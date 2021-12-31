@@ -4746,6 +4746,60 @@ end
 end
 resolve_username(rem[2],remm)
 end
+--     Set RioSudo     --
+if Sudo(msg) then
+if text ==( اضف مطور اساسي ) or text ==( رفع مطور اساسي ) and ChCheck(msg) then
+function sudo_reply(extra, result, success)
+DevRio:sadd(LaUrEn.. Rio:RioSudo: ,result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"Reply","‹ : تم رفعه في قائمة المطورين الاساسيين")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),sudo_reply)
+end end 
+if text and (text:match( ^اضف مطور اساسي @(.*) ) or text:match( ^رفع مطور اساسي @(.*) )) and ChCheck(msg) then
+local username = text:match( ^اضف مطور اساسي @(.*) ) or text:match( ^رفع مطور اساسي @(.*) )
+function promreply(extra,result,success)
+if result.id_ then
+DevRio:sadd(LaUrEn.. Rio:RioSudo: ,result.id_)
+ReplyStatus(msg,result.id_,"Reply","‹ : تم رفعه في قائمة المطورين الاساسيين")  
+else 
+Dev_Rio(msg.chat_id_, msg.id_, 1,  ‹ : *المعرف غير صحيح* , 1,  md )
+end end 
+resolve_username(username,promreply)
+end
+if text and (text:match( ^اضف مطور اساسي (%d+) ) or text:match( ^رفع مطور اساسي (%d+) )) and ChCheck(msg) then
+local user = text:match( اضف مطور اساسي (%d+) ) or text:match( رفع مطور اساسي (%d+) )
+DevRio:sadd(LaUrEn.. Rio:RioSudo: ,user)
+ReplyStatus(msg,user,"Reply","‹ : تم رفعه في قائمة المطورين الاساسيين")  
+end
+--     Source BrandTame     --
+--     Rem SecondSudo     --
+if text ==( حذف مطور اساسي ) or text ==( تنزيل مطور اساسي ) and ChCheck(msg) then
+function prom_reply(extra, result, success)
+DevRio:srem(LaUrEn.. Rio:RioSudo: ,result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"Reply","‹ : تم تنزيله من قائمة المطورين الاساسيين")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
+end end
+if text and (text:match( ^حذف مطور اساسي @(.*) ) or text:match( ^تنزيل مطور اساسي @(.*) )) and ChCheck(msg) then
+local username = text:match( ^حذف مطور اساسي @(.*) ) or text:match( ^تنزيل مطور اساسي @(.*) )
+function promreply(extra,result,success)
+if result.id_ then
+DevRio:srem(LaUrEn.. Rio:RioSudo: ,result.id_)
+ReplyStatus(msg,result.id_,"Reply","‹ : تم تنزيله من قائمة المطورين الاساسيين")  
+else 
+Dev_Rio(msg.chat_id_, msg.id_, 1,  ‹ : *المعرف غير صحيح* , 1,  md )
+end end 
+resolve_username(username,promreply)
+end
+if text and (text:match( ^حذف مطور اساسي (%d+) ) or text:match( ^تنزيل مطور اساسي (%d+) )) and ChCheck(msg) then
+local user = text:match( حذف مطور اساسي (%d+) ) or text:match( تنزيل مطور اساسي (%d+) )
+DevRio:srem(LaUrEn.. Rio:RioSudo: ,user)
+ReplyStatus(msg,user,"Reply","‹ : تم تنزيله من قائمة المطورين الاساسيين")  
+end end
 --     Source LaUrEn     --
 --     Set SecondSudo     --
 if Sudo(msg) then
